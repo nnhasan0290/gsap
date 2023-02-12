@@ -1,8 +1,9 @@
 gsap.to("h1", {
   x: 400,
-  duration: 2,
-  repeat: 2,
   yoyo: true,
-  ease: "bounce.out",
+  ease: "linear",
+  stagger: {
+    each: 1,
+    from: "end",
+  },
 });
-gsap.to("h2", { x: 400, delay: 2 });
